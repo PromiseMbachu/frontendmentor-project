@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:hsl(0, 0%, 98%);
+    width:1440px;
+    margin:15px;
+    height:100%;
+}
+.container{
+    display:inline-block;
+    width:100%;
+    
+}
+.left-side{
+    width:50%;
+    float:left;
+    margin:auto;
+    display: inline-block;
+}
+.left-side ul{
+    list-style-type:none;
+}
+.left-side ul a{
+    text-decoration:none;
+    color:hsl(0, 0%, 41%);
+}
+.left-side ul li{
+    display:inline-flex;
+    margin:20px;
+}
+.left-side ul li a:hover{
+    color:black;
+}
+.sub-menu1{
+    display:none;
+}
+.left-side ul li:hover .sub-menu1{
+    display:block;
+    position:absolute;
+    margin-top:15px;
+    margin-left:-15px;
+    background-color:white;
+}
+.left-side ul li:hover .sub-menu1 ul li{
+    display:block;
+    margin:20px;
+}
+.sub-menu2{
+    display:none;
+}
+.left-side ul li:hover .sub-menu2{
+    display:block;
+    position:absolute;
+    margin-top:15px;
+    margin-left:-15px;
+    background-color:white;
+}
+.left-side ul li:hover .sub-menu2 ul li{
+    display:block;
+    margin:20px;
+}
+.body{
+
+}
+.body .main{
+    margin-top:100px;
+    margin-left:90px;
+    font-size:70px;
+}
+.paragraph{
+    color:hsl(0, 0%, 41%);
+    margin:20px 90px;
+    font-size:20px;
+}
+.learn{
+    margin-top:10px;
+    margin-left:90px;
+    padding:10px;
+    width:170px;
+    height:30px;
+    border:1px solid black;
+    border-radius:10px;
+    text-align: center;
+    color:white;
+    background-color: black;
+}
+.learn a{
+    color:white;
+    text-decoration:none;
+}
+.bottom{
+    justify-content: baseline;
+    margin-left:90px;
+    margin-top:80px;
+    font-size:20px;
+    color:hsl(0, 0%, 41%);
+}
+.right-side{
+    width:50%;
+    float:right;
+}
+.right-side img{
+    width:600px;
+    height:650px;
+    margin:auto;
+}
+.right-side ul{
+    list-style-type:none;
+    text-align: right;
+}
+.right-side ul a{
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+}
+.right-side ul li{
+    display:inline-flex;
+    margin:10px;
+    padding:10px;
+}
+.right-side ul a:hover{
+    color:black;
+    border-color:black;
+}
+.register{
+    border:3px solid hsl(0, 0%, 41%);
+    border-radius:10px;
+}
+@media only screen (min-width: 375px) {
+    .left-side ul li{
+        display:none;
+    }
+}
